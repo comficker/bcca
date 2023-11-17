@@ -19,7 +19,7 @@
         >{{ item.name }}</nuxt-link>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="uppercase font-poppin leading-6 text-gray-900">Member log in <span aria-hidden="true">&rarr;</span></a>
+        <nuxt-link to="/welcome" href="#" class="uppercase font-poppin leading-6 text-gray-900">Member log in <span aria-hidden="true">&rarr;</span></nuxt-link>
       </div>
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">

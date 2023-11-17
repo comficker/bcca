@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-
+const route = useRoute()
 useHead({
   link: [
     {
@@ -24,7 +24,7 @@ useHead({
     <div class="flex-1">
       <slot class="w-full"/>
     </div>
-    <partial-footer/>
+    <partial-footer v-if="route.name !== 'welcome'"/>
   </main>
 </template>
 
