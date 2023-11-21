@@ -3,14 +3,14 @@
 </script>
 
 <template>
-  <div class="min-h-screen space-y-8 py-12 font-mulish">
+  <div class="min-h-screen space-y-8 py-12 font-merriweather leading-8	">
     <div class="mx-auto max-w-3xl px-6 lg:px-8 space-y-4">
-      <div class="py-12 space-y-4">
+      <div class="py-6 space-y-4">
         <time datetime="2022-09-05" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
           <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
           <span class="ml-3">September 5, 2023</span>
         </time>
-        <h1 class="text-6xl font-bold leading-6 font-medium">Lorem Ipsum</h1>
+        <h1 class="text-6xl font-bold">Lorem Ipsum</h1>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

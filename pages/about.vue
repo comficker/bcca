@@ -56,28 +56,28 @@ const committee = [
 
 const timeline = [
   {
-    name: 'Founded company',
+    name: 'Founded',
     description:
       'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
     date: 'Aug 2021',
     dateTime: '2021-08',
   },
   {
-    name: 'Secured $65m in funding',
+    name: 'Funding',
     description:
       'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
     date: 'Dec 2021',
     dateTime: '2021-12',
   },
   {
-    name: 'Released beta',
+    name: 'Released',
     description:
       'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
     date: 'Feb 2022',
     dateTime: '2022-02',
   },
   {
-    name: 'Global launch of product',
+    name: 'Global launch',
     description:
       'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
     date: 'Dec 2022',

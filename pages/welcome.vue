@@ -1,23 +1,9 @@
-<!--
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
-  <div class="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div id="welcome" class="flex min-h-full flex-1 flex-col justify-center py-8 sm:px-6 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-md font-poppin">
-      <h2 class="mt-6 text-center text-3xl font-semibold leading-9 tracking-tight text-gray-900">Member area</h2>
+      <h2 class="text-3xl font-semibold leading-9 tracking-tight text-gray-900">Member area</h2>
     </div>
-    <div class="mt-4 sm:mx-auto sm:w-full sm:max-w-[480px]">
+    <div class="mt-4 sm:mx-auto sm:w-full sm:max-w-md">
       <div class="bg-white px-6 py-12 shadow sm:px-12">
         <form class="space-y-6" action="#" method="POST">
           <div>
@@ -53,3 +39,12 @@
     </div>
   </div>
 </template>
+
+<style>
+#welcome {
+  background-image: url(https://bmwca.org/wp-content/uploads/2016/10/k101.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: calc(100vh - 95px);
+}
+</style>
