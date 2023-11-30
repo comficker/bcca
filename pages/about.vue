@@ -194,9 +194,14 @@ const timeline = [
       </div>
     </div>
     <div class="my-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-6">
+      <div class="uppercase font-poppin">
+        <div class="text-red-500 text-sm">BMW CLUBS ASIA.</div>
+        <div class="inline-flex font-semibold text-3xl border-b-2">Timelines
+        </div>
+      </div>
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
         <div v-for="item in timeline" :key="item.name">
-          <time :datetime="item.dateTime" class="flex items-center text-sm font-semibold leading-6 text-indigo-600">
+          <time :datetime="item.dateTime" class="flex items-center font-semibold leading-6 text-indigo-600">
             <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
               <circle cx="2" cy="2" r="2" fill="currentColor" />
             </svg>

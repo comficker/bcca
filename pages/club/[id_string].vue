@@ -8,9 +8,19 @@
         <div class="flex">
           <img class="w-24 ring-4 ring-white sm:w-32" :src="profile.avatar" alt="" />
         </div>
-        <div class="mt-6 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
+        <div class="mt-20 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
           <div class="mt-6 min-w-0 flex-1 sm:hidden md:block">
             <h1 class="truncate text-2xl font-bold text-gray-900">{{ profile.name }}</h1>
+            <div class="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
+              <div class="mt-2 flex items-center text-sm text-gray-500">
+                <UsersIcon class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                1000
+              </div>
+              <div class="mt-2 flex items-center text-sm text-gray-500">
+                <CalendarIcon class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                Created on January 9, 2020
+              </div>
+            </div>
           </div>
           <div class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
             <button type="button" class="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
@@ -25,6 +35,11 @@
       </div>
     </div>
     <div class="my-6 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-6">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+      <div class="uppercase font-poppin">
+        <div class="inline-flex font-semibold text-3xl border-b-2">News
+        </div>
+      </div>
       <div class="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <card-post v-for="(item, i) in news" :key="i" :value="item"/>
       </div>
@@ -34,6 +49,11 @@
 
 <script setup>
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/vue/20/solid'
+import {
+  BriefcaseIcon,
+  CalendarIcon,
+  UsersIcon
+} from '@heroicons/vue/20/solid'
 
 const profile = {
   name: 'BMW car club Vietnam',

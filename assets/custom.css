@@ -26,6 +26,10 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+.font-karla {
+  font-family: 'Karla', serif;
+}
+
 html {
   overscroll-behavior: none;
 }
