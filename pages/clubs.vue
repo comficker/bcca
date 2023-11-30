@@ -21,6 +21,11 @@ const clubs = [
 
 <template>
   <div class="w-screen">
+    <div class="w-screen h-screen">
+      <client-only>
+        <helper-map/>
+      </client-only>
+    </div>
     <div class="my-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-6">
       <div class="uppercase font-poppin">
         <div class="text-red-500 text-sm">BMW CLUBS ASIA.</div>

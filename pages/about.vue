@@ -1,36 +1,4 @@
 <script setup lang="ts">
-const clubs: string[] = [
-  "vietnam-car",
-  "ceylon-car",
-  "combodia-motorcycle",
-  "hongkong-car",
-  "india-car",
-  "indonesia-car",
-  "iran",
-  "malaysia-motorrad",
-  "malaysia",
-  "philippines-car",
-  "saferiders",
-  "singapore-car",
-  "singapore-motocycle",
-  "taiwan",
-  "thailand-motorcycle",
-  "thailand-motorrad-south"
-]
-
-const chunk = computed(() => {
-  return clubs.reduce((resultArray: string[][], item, index) => {
-    const chunkIndex = Math.floor(index / 5)
-    if (!resultArray[chunkIndex]) {
-      resultArray[chunkIndex] = []
-    }
-    resultArray[chunkIndex].push(item)
-    return resultArray
-  }, [])
-})
-
-const index = ref(0)
-
 const committee = [
   {
     img: "https://bmwca.org/wp-content/uploads/2017/11/BMWCA-C.jpg",
@@ -84,6 +52,27 @@ const timeline = [
     dateTime: '2022-12',
   },
 ]
+
+const news = [
+  {
+    image: "https://supapjpiqdfzuaordcdx.supabase.co/storage/v1/render/image/public/images/thelever.jpeg?width=600&height=426&resize=cover",
+    title: "BLAG (Better Letters Magazine)",
+    desc: "Award-winning journalist and Oscar-nominated writer David Sirota conducts investigative journalism about holding people and corporations manipulating the levers of power accountable.",
+    c: "#323A57"
+  },
+  {
+    image: "https://supapjpiqdfzuaordcdx.supabase.co/storage/v1/render/image/public/images/thelever.jpeg?width=600&height=426&resize=cover",
+    title: "BLAG (Better Letters Magazine)",
+    desc: "Award-winning journalist and Oscar-nominated writer David Sirota conducts investigative journalism about holding people and corporations manipulating the levers of power accountable.",
+    c: "#EBB29A"
+  },
+  {
+    image: "https://supapjpiqdfzuaordcdx.supabase.co/storage/v1/render/image/public/images/thelever.jpeg?width=600&height=426&resize=cover",
+    title: "BLAG (Better Letters Magazine)",
+    desc: "Award-winning journalist and Oscar-nominated writer David Sirota conducts investigative journalism about holding people and corporations manipulating the levers of power accountable.",
+    c: "#9FD0CC"
+  }
+]
 </script>
 
 <template>
@@ -135,36 +124,6 @@ const timeline = [
         </div>
       </div>
     </div>
-    <div class="my-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
-      <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:px-16">
-        <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Our partners</h2>
-        <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Aliquip reprehenderit incididunt amet quis
-          fugiat ut velit. Sit occaecat labore proident cillum in nisi adipisicing officia excepteur tempor
-          deserunt.</p>
-        <div
-          class="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-5">
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-               src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/explained-m/exlm-og.jpg"
-               alt="Transistor" width="158" height="48">
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-               src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/explained-m/exlm-og.jpg"
-               alt="Reform" width="158" height="48">
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-               src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/explained-m/exlm-og.jpg"
-               alt="Tuple" width="158" height="48">
-          <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-               src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/explained-m/exlm-og.jpg"
-               alt="SavvyCal" width="158" height="48">
-          <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-               src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/explained-m/exlm-og.jpg"
-               alt="Statamic" width="158" height="48">
-        </div>
-        <div class="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
-          <div class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
-               style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
-        </div>
-      </div>
-    </div>
     <div class="my-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-6">
       <div class="uppercase font-poppin">
         <div class="text-red-500 text-sm">BMW CLUBS ASIA.</div>
@@ -186,14 +145,9 @@ const timeline = [
         <div class="inline-flex font-semibold text-3xl border-b-2">OUR MEMBERS
         </div>
       </div>
-      <div class="grid gap-6 md:gap-12 grid-cols-2 md:grid-cols-5">
-        <div v-for="item in chunk[index]" :key="item"
-             class="uppercase text-center space-y-2 shadow hover:shadow-xl bg-white duration-200">
-          <img :src="`/logo/${item}.jpeg`" alt="">
-        </div>
-      </div>
+      <helper-slider/>
     </div>
-    <div class="my-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-6">
+    <div v-if="false" class="my-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-6">
       <div class="uppercase font-poppin">
         <div class="text-red-500 text-sm">BMW CLUBS ASIA.</div>
         <div class="inline-flex font-semibold text-3xl border-b-2">Timelines
@@ -211,6 +165,16 @@ const timeline = [
           <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{{ item.name }}</p>
           <p class="mt-1 text-base leading-7 text-gray-600">{{ item.description }}</p>
         </div>
+      </div>
+    </div>
+    <div class="my-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-6">
+      <div class="uppercase font-poppin">
+        <div class="text-red-500 text-sm">BMW CLUBS ASIA.</div>
+        <div class="inline-flex font-semibold text-3xl border-b-2">NEWS
+        </div>
+      </div>
+      <div class="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <card-post v-for="(item, i) in news" :key="i" :value="item"/>
       </div>
     </div>
   </div>
