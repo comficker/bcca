@@ -58,11 +58,11 @@ const safes = [
 
 const news = computed(() => {
   return safes.map(x => ({
-      image: `/post/${x}.JPG`,
-      title: "BLAG (Better Letters Magazine)",
-      desc: "Award-winning journalist and Oscar-nominated writer David Sirota conducts investigative journalism about holding people and corporations manipulating the levers of power accountable.",
-      c: "#9FD0CC"
-    }))
+    image: `/post/${x}.JPG`,
+    title: "Lorem ipsum dolor sit amet",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    c: "#9FD0CC"
+  }))
 })
 </script>
 
@@ -71,23 +71,22 @@ const news = computed(() => {
     <section aria-labelledby="cause-heading">
       <div class="relative bg-gray-800 px-6 py-32 sm:px-12 sm:py-40 lg:px-16 rounded-lg overflow-hidden">
         <div class="absolute inset-0 overflow-hidden">
-          <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-feature-section-full-width.jpg" alt=""
-               class="h-full w-full object-cover object-center"/>
+          <img
+            src="https://tailwindui.com/img/ecommerce-images/home-page-03-feature-section-full-width.jpg" alt=""
+            class="h-full w-full object-cover object-center"/>
         </div>
         <div aria-hidden="true" class="absolute inset-0 bg-gray-900 bg-opacity-50"/>
         <div class="relative mx-auto flex max-w-3xl flex-col items-center text-center">
           <div class="flex space-x-3">
             <div class="flex-shrink-0">
-              <img class="h-10 w-10 rounded-full"
-                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                   alt=""/>
+              <img
+                class="h-10 w-10 rounded-full"
+                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""/>
             </div>
           </div>
-          <h2 id="cause-heading" class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Long-term
-            thinking</h2>
-          <p class="mt-3 text-xl text-white">We're committed to responsible, sustainable, and ethical manufacturing. Our
-            small-scale approach allows us to focus on quality and reduce our impact. We're doing our best to delay the
-            inevitable heat-death of the universe.</p>
+          <h2 id="cause-heading" class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Lorem ipsum dolor sit amet</h2>
+          <p class="mt-3 text-xl text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <a href="#"
              class="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto">Read
             full story</a>
