@@ -22,7 +22,7 @@ const news = [
 </script>
 
 <template>
-  <div class="space-y-8 py-12 font-karla leading-8">
+  <div class="space-y-8 py-12 leading-8">
     <div class="mx-auto max-w-5xl px-6 lg:px-8 space-y-4 flex gap-6">
       <div class="flex-1 py-6 space-y-4">
         <div class="flex flex-wrap">
@@ -56,7 +56,7 @@ const news = [
       </div>
     </div>
   </div>
-  <div class="min-h-screen space-y-8 font-karla leading-8">
+  <div class="min-h-screen space-y-8 leading-8">
     <div class="mx-auto max-w-3xl px-6 lg:px-8 space-y-4">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
