@@ -16,7 +16,10 @@ const {value} = defineProps<{ value: Post }>()
     </div>
     <div class="flex flex-wrap text-sm">
       <div class="p-1">
-        <div class="p-3 py-1 border rounded-xl">Category</div>
+        <div class="p-3 py-1 border rounded-xl">News</div>
+      </div>,
+      <div class="p-1">
+        <div class="p-3 py-1 border rounded-xl">Club Activities</div>
       </div>
     </div>
     <div class="space-y-2 leading-6">

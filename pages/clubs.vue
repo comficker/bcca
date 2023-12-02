@@ -1,21 +1,22 @@
 <script setup lang="ts">
 const clubs = [
-  "vietnam-car",
-  "ceylon-car",
-  "combodia-motorcycle",
-  "hongkong-car",
-  "india-car",
+  "asia",
   "indonesia-car",
-  "iran",
-  "malaysia-motorrad",
   "malaysia",
+  "malaysia-motorrad",
   "philippines-car",
   "saferiders",
-  "singapore-car",
-  "singapore-motocycle",
-  "taiwan",
   "thailand-motorcycle",
-  "thailand-motorrad-south"
+  "thailand-motorrad-south",
+  "singapore-motocycle",
+  "singapore-car",
+  "hongkong-car",
+  "taiwan",
+  "combodia-motorcycle",
+  "ceylon-car",
+  "vietnam-car",
+  "iran",
+  "india-car",
 ]
 </script>
 

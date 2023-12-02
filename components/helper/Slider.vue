@@ -1,21 +1,22 @@
 <script setup lang="ts">
 const clubs: string[] = [
-  "vietnam-car",
-  "ceylon-car",
-  "combodia-motorcycle",
-  "hongkong-car",
-  "india-car",
+  "asia",
   "indonesia-car",
-  "iran",
-  "malaysia-motorrad",
   "malaysia",
+  "malaysia-motorrad",
   "philippines-car",
   "saferiders",
-  "singapore-car",
-  "singapore-motocycle",
-  "taiwan",
   "thailand-motorcycle",
-  "thailand-motorrad-south"
+  "thailand-motorrad-south",
+  "singapore-motocycle",
+  "singapore-car",
+  "hongkong-car",
+  "taiwan",
+  "combodia-motorcycle",
+  "ceylon-car",
+  "vietnam-car",
+  "iran",
+  "india-car",
 ]
 
 const chunk = computed(() => {
@@ -53,9 +54,9 @@ onMounted(() => {
       >
         <div v-for="item in clubs" :key="item" class="w-1/2 md:w-1/5 flex-none">
           <div class="pb-6 p-3">
-            <div class="uppercase text-center space-y-2 shadow hover:shadow-xl bg-white duration-200">
+            <nuxt-link :to="`/club/${item}`" class="block uppercase text-center space-y-2 shadow hover:shadow-xl bg-white duration-200">
               <img :src="`/logo/${item}.jpeg`" alt="">
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
