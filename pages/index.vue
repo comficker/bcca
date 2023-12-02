@@ -1,24 +1,21 @@
 <script setup lang="ts">
-const news = [
-  {
-    image: "https://supapjpiqdfzuaordcdx.supabase.co/storage/v1/render/image/public/images/thelever.jpeg?width=600&height=426&resize=cover",
-    title: "BLAG (Better Letters Magazine)",
-    desc: "Award-winning journalist and Oscar-nominated writer David Sirota conducts investigative journalism about holding people and corporations manipulating the levers of power accountable.",
-    c: "#323A57"
-  },
-  {
-    image: "https://supapjpiqdfzuaordcdx.supabase.co/storage/v1/render/image/public/images/thelever.jpeg?width=600&height=426&resize=cover",
-    title: "BLAG (Better Letters Magazine)",
-    desc: "Award-winning journalist and Oscar-nominated writer David Sirota conducts investigative journalism about holding people and corporations manipulating the levers of power accountable.",
-    c: "#EBB29A"
-  },
-  {
-    image: "https://supapjpiqdfzuaordcdx.supabase.co/storage/v1/render/image/public/images/thelever.jpeg?width=600&height=426&resize=cover",
-    title: "BLAG (Better Letters Magazine)",
-    desc: "Award-winning journalist and Oscar-nominated writer David Sirota conducts investigative journalism about holding people and corporations manipulating the levers of power accountable.",
-    c: "#9FD0CC"
-  }
+const safes = [
+  "thailand-motorcycle",
+  "asia",
+  "combodia-motorcycle",
+  "indonesia-car",
+  "saferiders",
+  "singapore-motocycle"
 ]
+
+const news = computed(() => {
+  return safes.map(x => ({
+    image: `/post/${x}.JPG`,
+    title: "Lorem ipsum dolor sit amet",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    c: "#9FD0CC"
+  }))
+})
 </script>
 
 <template>
